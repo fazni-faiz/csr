@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('./background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.video-feed {
+  margin: 20px auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interaction-panel {
+  margin: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notification {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.feedback {
+  margin: 10px 0;
+}
+
+.interaction-buttons {
+  margin: 10px 0;
+}
+
+.historical-data {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+/* Example CSS for popup styling */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.primary-button {
+  background-color: #007bff;
+}
+
+.google-button {
+  background-color: #ea4335;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+
+
+.most-freq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fer-logo {
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
+.interaction-panel button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.interaction-panel button:hover {
+  background-color: #777;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+}
