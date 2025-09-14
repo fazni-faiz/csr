@@ -61,7 +61,7 @@ function App() {
                   <p>Notification: Detected Angry Expression!</p>
                 </div>
               )}
-              {/* Emotion Display */}
+              {/* Emotion----- Display ...*/}
               <div className="emotion-display">
                 <EmotionDisplay />
               </div>
